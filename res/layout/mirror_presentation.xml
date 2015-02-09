@@ -1,0 +1,46 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    
+    <TextView
+        android:id="@+id/tv_disable"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#0000FF"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFF"
+        android:text="@string/disable"/>
+          
+    <FrameLayout
+        android:id="@+id/source_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/tv_disable"
+        android:layout_toLeftOf="@+id/tv_enable"
+        android:layout_above="@+id/tv_switch"/>
+	
+	<TextView
+	    android:id="@+id/tv_enable"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:background="#FF0000"
+        android:textColor="#FFFFFF"
+        android:text="@string/enable"/>
+	
+	<TextView 
+	    android:id="@+id/tv_switch"
+	    android:layout_width="match_parent"
+	    android:layout_height="70dp"
+	    android:layout_toRightOf="@id/tv_disable"
+	    android:layout_toLeftOf="@id/tv_enable"
+	    android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#00FF00"
+	    android:text="@string/switchHelper"/>
+</RelativeLayout>
